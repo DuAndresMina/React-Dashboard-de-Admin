@@ -1,2 +1,2 @@
-# React-Dashboard-de-Administraci-n
-React Dashboard de Administración
+# React-Dashboard-de-Admin
+React Dashboard de Admin
