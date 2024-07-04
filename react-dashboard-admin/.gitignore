@@ -4,7 +4,7 @@
 /node_modules
 /.pnp
 .pnp.js
-/.react-dashboard-admin/src/react-dashboard-de-admin-firebase-adminsdk-3ogkz-048234a3b0.json
+.react-dashboard-de-admin-firebase-adminsdk-3ogkz-048234a3b0.json
 
 # testing
 /coverage
