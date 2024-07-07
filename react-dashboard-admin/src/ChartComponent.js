@@ -9,6 +9,7 @@ const ChartComponent = ({ data }) => {
       <LineChart data={data}>
         <Line type="monotone" dataKey="Chrome" stroke="#8884d8" />
         <Line type="monotone" dataKey="Safari" stroke="#82ca9d" />
+        <Line type="monotone" dataKey="Edge"stroke="#8884c6"  />
         <CartesianGrid stroke="#ccc" />
         <XAxis dataKey="Date" />
         <YAxis />
