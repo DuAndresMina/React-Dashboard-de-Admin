@@ -1,8 +1,5 @@
-// Sidebar.js (Firebase.js)
-
 import React, { useState, useEffect } from 'react';
 import { ref, onValue } from "firebase/database";
-import { db } from './Firebase/firebase'; // Importar la exportación nombrada db
 
 function getData(db) {
   const dataRef = ref(db, '/');
@@ -15,7 +12,7 @@ function getData(db) {
   });
 }
 
-function Firebase({ db, setData }) {
+function Data({ db, setData }) {
   const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
@@ -24,10 +21,7 @@ function Firebase({ db, setData }) {
     getData(db)
       .then((data) => {
         if (isMounted) {
-          const transformedData = Object.keys(data).map(key => {
-            return { ...data[key], id: key };
-          });
-          setData(transformedData);
+          setData(data);
           setIsLoading(false);
         }
       })
@@ -47,7 +41,7 @@ function Firebase({ db, setData }) {
     return <div>Loading...</div>;
   }
 
-  return null; // No necesitas renderizar nada aquí
+  return null; // Or any other UI to show when data is loaded
 }
 
-export default Firebase;
+export default Data;

@@ -1,38 +1,71 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+}
+.poppins-thin {
+  font-family: "Poppins", sans-serif;
+  font-weight: 100;
+  font-style: normal;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.Navbar {
+ background-color: #ffffff;
+ padding: 1rem 2rem;
+ border-bottom: 2px solid #c4ccde;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.Sidebar {
+  grid-column: 2; /* Place sidebar in the second column */
+  position: fixed;
+  top: calc();
+  left: 0;
+  width: 14rem;
+  height: calc(100vh - 52px);
+  border-right: 2px solid #c4ccde;
+  
+  ul{
+    list-style: none;
+    padding: 1rem;
+    li{
+      margin-bottom: 1.5rem;
+      a{
+        text-decoration: none;
+      }
+    }
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+
+.chart-container {
+
+  top: 20px; /* Adjust top position as needed */
+  left: 20px; /* Adjust left position as needed */
+  /* Styles for the chart container */
+  display: flex; /* Allow horizontal layout for alignment */
+  justify-content: center; /* Center the chart horizontally */
+  align-items: center; /* Center the chart vertically (optional) */
+  margin: 0px; /* Add some margin around the chart */
+  /* Add other styles as needed (width, height, border, etc.) */
 }
 
-.App-link {
-  color: #61dafb;
+
+
+
+
+.Home {
+
+  padding-left: 15rem; /* Adjust padding based on sidebar width */
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.Second {
+
+  padding-left: 15rem; /* Adjust padding based on sidebar width */
 }
+
+.Three {
+
+  padding-left: 15rem; /* Adjust padding based on sidebar width */
+}
+
