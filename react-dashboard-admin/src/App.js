@@ -5,7 +5,7 @@ import SG from './Pages/Secondgra';
 import TG from './Pages/ThreeGra';
 import Navbar from './Componets/Navbar';
 import Sidebar from './Componets/Sidebar';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
 import 'C:/Users/duvan/OneDrive/Documentos/GitHub/React-Dashboard-de-Admin/react-dashboard-admin/src/App.css'; // Assuming correct path
 
 const App = () => {
@@ -20,6 +20,7 @@ const App = () => {
             <Route path="/FirstGraph" exact={true} element={<FirstGraph/>} />
             <Route path="/SecondGraph" exact={true} element={<SG />} />
             <Route path="/ThreeGraph" exact={true} element={<TG />} />
+            <Route path="*" element={<Navigate to="/Home" />} /> 
           </Routes>
         </div>
       </div>
