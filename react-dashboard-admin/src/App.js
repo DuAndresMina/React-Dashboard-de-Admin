@@ -3,25 +3,27 @@ import Home from './Pages/Home';
 import FirstGraph from './Pages/FirstGrafic';
 import SG from './Pages/Secondgra';
 import TG from './Pages/ThreeGra';
-import Navbar from './Componets/Navbar';
+import MyNavbar from './Componets/Navbar';
 import Sidebar from './Componets/Sidebar';
 import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
-import 'C:/Users/duvan/OneDrive/Documentos/GitHub/React-Dashboard-de-Admin/react-dashboard-admin/src/App.css'; // Assuming correct path
+import './App.css'; // Assuming correct path for App.css
 
 const App = () => {
   return (
     <Router>
-      <Navbar />
-      <div className="flex">
+      <div className="app-container">
         <Sidebar />
-        <div className="content">
-          <Routes>
-            <Route path="/Home" exact={true} element={<Home />} />
-            <Route path="/FirstGraph" exact={true} element={<FirstGraph/>} />
-            <Route path="/SecondGraph" exact={true} element={<SG />} />
-            <Route path="/ThreeGraph" exact={true} element={<TG />} />
-            <Route path="*" element={<Navigate to="/Home" />} /> 
-          </Routes>
+        <div className="main-content">
+          <MyNavbar />
+          <div className="content">
+            <Routes>
+              <Route path="/Home" exact={true} element={<Home />} />
+              <Route path="/FirstGraph" exact={true} element={<FirstGraph />} />
+              <Route path="/SecondGraph" exact={true} element={<SG />} />
+              <Route path="/ThreeGraph" exact={true} element={<TG />} />
+              <Route path="*" element={<Navigate to="/Home" />} />
+            </Routes>
+          </div>
         </div>
       </div>
     </Router>

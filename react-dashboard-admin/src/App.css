@@ -10,11 +10,22 @@
   font-style: normal;
 }
 
-.Navbar {
- background-color: #ffffff;
- padding: 1rem 2rem;
- border-bottom: 2px solid #c4ccde;
+
+.app-container {
+  display: flex;
 }
+
+.main-content {
+  margin-left: 14rem; /* Offset by the width of the sidebar */
+  width: calc(100% - 14rem); /* Ensure full width */
+  display: flex;
+  flex-direction: column;
+}
+
+.Navbar {
+  width: 100%;
+}
+
 
 .Sidebar {
   grid-column: 2; /* Place sidebar in the second column */
@@ -22,7 +33,7 @@
   top: calc();
   left: 0;
   width: 14rem;
-  height: calc(100vh - 52px);
+  height: calc(100vh - 0px);
   border-right: 2px solid #c4ccde;
   background-color: aliceblue;
   
@@ -43,18 +54,11 @@
 
 
 .chart-container {
-
-  top: 20px; /* Adjust top position as needed */
-  left: 20px; /* Adjust left position as needed */
-  /* Styles for the chart container */
-  display: flex; /* Allow horizontal layout for alignment */
-  justify-content: center; /* Center the chart horizontally */
-  align-items: center; /* Center the chart vertically (optional) */
-  margin: 0px; /* Add some margin around the chart */
-  /* Add other styles as needed (width, height, border, etc.) */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
 }
-
-
 
 
 
