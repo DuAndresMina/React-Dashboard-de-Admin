@@ -7,7 +7,7 @@ import { db } from '../Firebase/firebase'; // Assuming correct path
 const FirstGraph = () => {
   const [data, setData] = useState([]);
   return (
-    <div className="chart-container">
+    <div>
       <Data db={db} setData={setData} />
       <ChartComponent data={data} />
     </div>

@@ -26,6 +26,52 @@
   width: 100%;
 }
 
+/* Contenedor general */
+.chart-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+}
+
+/* Contenedor para el filtro de navegador */
+.browser-filter-container {
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.browser-filter-container select {
+  margin-left: 10px;
+  padding: 5px;
+}
+
+/* Asegurar el ResponsiveContainer ocupa el espacio necesario */
+.responsive-container {
+  width: 100%;
+  max-width: 800px;
+}
+
+@media (max-width: 768px) {
+  /* Ajustes para pantallas más pequeñas */
+  .chart-container {
+    padding: 10px;
+  }
+  
+  .browser-filter-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .responsive-container {
+    width: 90%;
+  }
+}
 
 .Sidebar {
   grid-column: 2; /* Place sidebar in the second column */
@@ -53,27 +99,18 @@
 }
 
 
-.chart-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 20px;
-}
-
-
-
 .Home {
 
-  padding-left: 15rem; /* Adjust padding based on sidebar width */
+  padding-left: 0rem; /* Adjust padding based on sidebar width */
 }
 
 .Second {
 
-  padding-left: 15rem; /* Adjust padding based on sidebar width */
+  padding-left: 0rem; /* Adjust padding based on sidebar width */
 }
 
 .Three {
 
-  padding-left: 15rem; /* Adjust padding based on sidebar width */
+  padding-left: 0rem; /* Adjust padding based on sidebar width */
 }
 

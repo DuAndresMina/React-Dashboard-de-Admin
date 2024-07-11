@@ -8,6 +8,7 @@ import {
   DropdownToggle,
   DropdownMenu,
   DropdownItem,
+  NavbarBrand,
 } from 'reactstrap';
 
 const MyNavbar = () => {
@@ -16,7 +17,8 @@ const MyNavbar = () => {
   const toggle = () => setIsOpen(!isOpen);
 
   return (
-    <Navbar color='dark' dark expand="md"> {/* Customize colors if needed */}
+    <Navbar color='dark' dark expand="md"> 
+      <NavbarBrand href="/Home">Logo Company</NavbarBrand>
       <NavbarToggler onClick={toggle} />
       <Collapse isOpen={isOpen} navbar>
         <Nav className="ms-auto" navbar>
