@@ -15,9 +15,9 @@ const ChartComponent = ({ data }) => {
   return (
     <div className="chart-container">
       <div className="browser-filter-container">
-        <label htmlFor="browser-select">Seleccione el navegador: </label>
+        <label htmlFor="browser-select">Select Browser: </label>
         <select id="browser-select" onChange={handleBrowserChange}>
-          <option value="All">Todos</option>
+          <option value="All">All</option>
           {browserNames.map(browser => (
             <option key={browser} value={browser}>{browser}</option>
           ))}
