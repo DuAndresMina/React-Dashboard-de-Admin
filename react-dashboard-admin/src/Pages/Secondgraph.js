@@ -113,9 +113,13 @@ const SecondGraph = () => {
     }, []);
 
     return (
-        <div>
-            {chartData ? <Line data={chartData} /> : <p>Loading...</p>}
+        
+        <div className="chart-container">
+            {chartData ?<Line data={chartData} className="Second" />: <p>Loading...</p>}
+
+            <div className="rectangle"><embed type="image/svg+xml" alt="Rectangle"  src="https://cdn-us.icons8.com/docs/YCl99xpRj0K9O98__OXO-Q/9atREJ4y0U6Wr8nFfm0cgw.svg" /> </div>
         </div>
+        
     );
 };
 
