@@ -26,17 +26,7 @@
   width: 100%;
 }
 
-/* Contenedor general */
-.chart-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin: 20px;
-  padding: 20px;
-  border: 1px solid #ddd;
-  border-radius: 8px;
-  background-color: #f9f9f9;
-}
+
 
 /* Contenedor para el filtro de navegador */
 .browser-filter-container {
@@ -99,15 +89,33 @@
 }
 
 
+.chart-container {
+  
+  
+  height: 460px; /* Ajusta la altura según sea necesario */
+  margin: 0 auto; /* Centra el gráfico horizontalmente */
+  display: flex;
+  flex-direction: row; /* Arrange elements horizontally */
+  align-items: flex-start; /* Align vertically to the top */
+  justify-content: space-between; /* Distribute space between elements */
+  padding: 20px;
+  position: relative; /* Enable relative positioning */
+  top: 20px; /* Move the container down from the top */
+}
+.Second {
+  width: 50%;
+}
+
+.rectangle {
+  width: 50%;
+}
+
 .Home {
 
   padding-left: 0rem; /* Adjust padding based on sidebar width */
 }
 
-.Second {
 
-  padding-left: 0rem; /* Adjust padding based on sidebar width */
-}
 
 .Three {
 
